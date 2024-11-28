@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add User</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add User</h1>
+      <form action="add_user.php" method="post">
+        <label for="uid">RFID UID:</label>
+        <input type="text" id="uid" name="uid" required />
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="uhid">UHID:</label>
+        <input type="text" id="uhid" name="uhid" required />
+
+        <label for="blood_group">Blood Group:</label>
+        <input type="text" id="blood_group" name="blood_group" required />
+
+        <label for="prescription_link">Prescription Google Drive Link:</label>
+        <input
+          type="url"
+          id="prescription_link"
+          name="prescription_link"
+          required
+        />
+
+        <label for="medication_link">Medication Google Drive Link:</label>
+        <input
+          type="url"
+          id="medication_link"
+          name="medication_link"
+          required
+        />
+
+        <button type="submit">Add User</button>
+      </form>
+    </div>
+  </body>
+</html>
